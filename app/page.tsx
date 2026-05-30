@@ -70,7 +70,7 @@ export default function Home() {
   const [isCertificatesOpen, setIsCertificatesOpen] = useState(false);
   const [activeCertIndex, setActiveCertIndex] = useState(0);
 
-  const basePath = "/myportfolio";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const certificates = [
     {
       title: "Java Programming",
