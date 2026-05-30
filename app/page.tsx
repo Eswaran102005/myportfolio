@@ -70,34 +70,35 @@ export default function Home() {
   const [isCertificatesOpen, setIsCertificatesOpen] = useState(false);
   const [activeCertIndex, setActiveCertIndex] = useState(0);
 
+  const basePath = "/myportfolio";
   const certificates = [
     {
       title: "Java Programming",
       issuer: "Great Learning",
       date: "2023",
-      file: "/assets/JAVA_PROGRAMMING_CERTIFICATE.pdf",
-      credentialUrl: "/assets/JAVA_PROGRAMMING_CERTIFICATE.pdf"
+      file: `${basePath}/assets/JAVA_PROGRAMMING_CERTIFICATE.pdf`,
+      credentialUrl: `${basePath}/assets/JAVA_PROGRAMMING_CERTIFICATE.pdf`
     },
     {
       title: "Python Programming Basics",
       issuer: "Great Learning",
       date: "2023",
-      file: "/assets/Python_certificate.pdf",
-      credentialUrl: "/assets/Python_certificate.pdf"
+      file: `${basePath}/assets/Python_certificate.pdf`,
+      credentialUrl: `${basePath}/assets/Python_certificate.pdf`
     },
     {
       title: "SQL Database Certification",
       issuer: "Great Learning",
       date: "2023",
-      file: "/assets/SQL_%20Certificate.pdf",
-      credentialUrl: "/assets/SQL_%20Certificate.pdf"
+      file: `${basePath}/assets/SQL_%20Certificate.pdf`,
+      credentialUrl: `${basePath}/assets/SQL_%20Certificate.pdf`
     },
     {
       title: "C Programming Basics",
       issuer: "Great Learning",
       date: "2023",
-      file: "/assets/C_Basics_Certificate.pdf",
-      credentialUrl: "/assets/C_Basics_Certificate.pdf"
+      file: `${basePath}/assets/C_Basics_Certificate.pdf`,
+      credentialUrl: `${basePath}/assets/C_Basics_Certificate.pdf`
     }
   ];
 

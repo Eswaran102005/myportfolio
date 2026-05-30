@@ -30,8 +30,9 @@ export default function BrainCanvasSequence({
         return new Promise((resolve) => {
           const img = new Image();
           const frameIndex = i.toString().padStart(3, "0");
+          const basePath = "/myportfolio";
           // Added ?v=2 to bust browser cache and load the newly updated frames
-          img.src = `/brine/ezgif-frame-${frameIndex}.jpg?v=2`;
+          img.src = `${basePath}/brine/ezgif-frame-${frameIndex}.jpg?v=2`;
           img.onload = () => {
             if (!isCancelled) {
               imagesRef.current[i - 1] = img;
